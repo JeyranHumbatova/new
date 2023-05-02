@@ -21,9 +21,13 @@ function createStudent() {
     nameInp.value = '';
     surnameInp.value = '';
     closeModal();
-    tbody.removeAttribute("class","d-none");
+   
 }
 function removeStudent() {
-    document.querySelector("tbody").setAttribute("class","d-none")
+    let  tab = document.getElementsByClassName("tr");
+    for (i = 0; i < tab.length; i++) {
+       tab-= tab[i].remove();
+    }
+
 
 }
