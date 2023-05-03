@@ -17,7 +17,7 @@ function createStudent() {
     arr.push(nameInp.value);
     arr.push(surnameInp.value);
     const tbody = document.querySelector("tbody");
-    tbody.innerHTML += `<tr><td>${index += 1}</td><td>${arr.shift(1)}</td><td>${arr.pop(1)}</td><td>    <button class="p-0 " ind="" onclick="removeStudent()" ><i class="las la-trash"></i></button></td></tr>`;
+    tbody.innerHTML += `<tr class="tr"><td>${index += 1}</td><td>${arr.shift(1)}</td><td>${arr.pop(1)}</td><td>    <button class="p-0 " ind="" onclick="removeStudent()" ><i class="las la-trash"></i></button></td></tr>`;
     nameInp.value = '';
     surnameInp.value = '';
     closeModal();
